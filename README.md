@@ -38,3 +38,6 @@ If you'd like to contribute to this repository:
 
 5. Open a pull request.
 
+## License
+
+This project is for educational purposes and follows the original authors' principles.

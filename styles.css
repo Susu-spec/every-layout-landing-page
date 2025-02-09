@@ -1,0 +1,45 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.gap-s1 {
+    gap: clamp(1.25rem, 1.19rem + 0.32vw, 1.41rem);
+}
+
+.gap-s2 {
+    gap: clamp(1.56rem, 1.39rem + 0.85vw, 2rem);
+}
+
+
+.flex {
+    display: flex;
+    place-content: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    place-content: center;
+}
+
+.news-logos {
+    max-width: 50rem;
+    margin-block-start: clamp(2.44rem, 1.83rem + 3.04vw, 4rem);;
+    justify-content: flex-start;
+    align-items: center;
+}
+

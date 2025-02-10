@@ -25,7 +25,7 @@
             <img src="./assets/images/cover_3rd.svg" alt="Every Layout 3rd Edition Cover" loading="lazy"/>
         </figure>
         
-        <section class="w-full max-w-40">
+        <section class="w-full max-w-45">
             <div class="flex-start flex-col flex w-full">
                 <h1>Learn to write better, resilient CSS</h1>
                 <p class="max-w-80">
@@ -34,31 +34,34 @@
                 <p class="max-w-80">
                     Through a series of simple, composable layouts, Every Layout will teach you how to better harness the built-in algorithms that power browsers and CSS.
                 </p>
-                <button>Buy Every Layout for $69</button>
-                <a href="https://www.every-layout.dev/rudiments/boxes">Read the free rudiments and axioms</a>
+                <button class="cta max-w-80"><a href="" >Buy Every Layout for $69</a></button>
+                <a href="https://www.every-layout.dev/rudiments/boxes" class="block-start">Read the free rudiments and axioms</a>
             </div>
         </section>
     </header>  
   <main>
-    <article class="flex gap-s1">
-        <section>
+    <article class="flex gap-s2 region font-mono w-full">
+        <section class="w-full">
             <h2>Already purchased Every Layout, but lost your access?</h2>
             <p>No worries. Add the <span>email address that you used to purchase Every Layout</span> and we’ll re-send your access link.</p>
         </section>
-        <form>
-            <label for="email1">Your email</label>
-            <input type="email" id="email1" name="email_to_subscribe" />
-            <button aria-label="Get access link to Every Layout book">Get my access link</button>
+        <form class="w-full flex flex-col">
+            <label for="email1" class="font-bold">Your email</label>
+            <div class="flex w-full">
+                <input class="max-w-80 w-full font-bold" type="email" id="email1" name="email_to_subscribe" />
+                <button class="w-full max-w-40" aria-label="Get access link to Every Layout book">Get my access link</button>
+            </div>
         </form>
     </article>
-    <article>
-        <h2>Every Layout has helped thousands of developers and companies simplify CSS layout in their projects</h2>
-        <p>
+    <article class="about">
+        <h2 class="max-w-80">Every Layout has helped thousands of developers and companies simplify CSS layout in their projects</h2>
+        <p class="max-w-60">
             Employing algorithmic layout design means doing away with <span>@media</span> breakpoints, “magic numbers”, and other hacks, to create context-independent layout components
-            <br>
+        </p>
+        <p class="max-w-60">
             Your future design systems will be more consistent, terser in code, and more malleable in the hands of your users and their devices. Every Layout is now in its 3rd edition and has helped some of the largest companies in the world achieve exactly this.
         </p>
-        <section class="news-logos">
+        <section class="news-logos flex justify-between w-full">
             <figure>
                 <img src="./assets/images/logos/bbc.svg" alt="BBC logo" />
             </figure>
@@ -86,7 +89,7 @@
         </section>
         <section>
             <h2>Let these happy folks tell you how Every Layout helped them</h2>
-            <div>
+            <div class="flex gap-s2">
               <figure>
                   <img alt="Image of Kevin Powell" />
                   <figcaption>Kevin Powell</figcaption>
@@ -132,8 +135,8 @@
             </div>
         </section>
     </article>
-    <article>
-        <section>
+    <article class="flex flex-col region">
+        <section class="max-w-60 font-mono block-start">
             <h2>Best practices do work</h2>
             <p>
                 Some influential people have framed CSS as a flawed technology. They’ve encouraged CSS authors to brute force layout in ways that don’t make the most of CSS’s features.
@@ -142,9 +145,9 @@
                 <br>
                 We teach you best practices that are guaranteed to make you a better, well-rounded CSS programmer, whether you are a full-stack developer, a designer, a back-end developer or even a <span>${yourJobTitleHere}</span>.
             </p>
-            <button>Read the free rudiments and axioms</button>
+            <button class="block-start">Read the free rudiments and axioms</button>
         </section>
-        <section>
+        <section class="grid-illustrations block-start">
             <figure>
                 <img src="./assets/images/illustrations/layout-icon_stack.svg" alt="illustration of the stack layout" />
                 <figcaption>
@@ -224,42 +227,44 @@
                 </figcaption>
             </figure>
         </section>
-        <section>
+        <section class="authors-section region">
             <h2>Meet the authors who brought you Every Layout</h2>
-            <div>
-                <figure>
-                    <img src="" alt="Heydon Pickering"/>
-                    <figcaption>Heydon Pickering</figcaption>
-                </figure>
-                <h3>Heydon Pickering</h3>
-                <p>
-                    Heydon is a front-end developer and technical writer specializing in inclusive interface design. They have written and edited a number of books on designing for the web. Every Layout is his second to be republished in Japan.
-                    <br>
-                    Heydon has consulted organizations like Spotify, The BBC, and SpringerNature, helping them to code and document accessible design systems. They also own an online gallery that lets you create and print unique, generative artworks.
-                </p>
-            </div>
-            <div>
-                <figure>
-                    <img src="" alt="Andy Bell"/>
-                    <figcaption>Andy Bell</figcaption>
-                </figure>
-                <h3>Andy Bell</h3>
-                <p>
-                    Andy is a designer and front-end developer who founded Set Studio: an agency who specialise in producing stunning websites that work for everyone.
-                    <br>
-                    Andy has also spent well over a decade specializing in simplifying CSS to make it scale-up for design system projects—in some cases, accessible to millions of people—for some of the largest organizations in the world, such as Google, Harley-Davidson, Vice Media and the NHS. He also wrote the majority of Learn CSS, a CSS course by web.dev.
-                </p>
+            <div class="authors flex justify-between block-start">
+                <div>
+                    <figure>
+                        <img src="" alt="Heydon Pickering"/>
+                        <figcaption>Heydon Pickering</figcaption>
+                    </figure>
+                    <h3>Heydon Pickering</h3>
+                    <p>
+                        Heydon is a front-end developer and technical writer specializing in inclusive interface design. They have written and edited a number of books on designing for the web. Every Layout is his second to be republished in Japan.
+                        <br>
+                        Heydon has consulted organizations like Spotify, The BBC, and SpringerNature, helping them to code and document accessible design systems. They also own an online gallery that lets you create and print unique, generative artworks.
+                    </p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="" alt="Andy Bell"/>
+                        <figcaption>Andy Bell</figcaption>
+                    </figure>
+                    <h3>Andy Bell</h3>
+                    <p>
+                        Andy is a designer and front-end developer who founded Set Studio: an agency who specialise in producing stunning websites that work for everyone.
+                        <br>
+                        Andy has also spent well over a decade specializing in simplifying CSS to make it scale-up for design system projects—in some cases, accessible to millions of people—for some of the largest organizations in the world, such as Google, Harley-Davidson, Vice Media and the NHS. He also wrote the majority of Learn CSS, a CSS course by web.dev.
+                    </p>
+                </div>
             </div>
         </section>
     </article>
-    <article>
+    <article class="region text-center cta-section">
         <h2>Buy Every Layout For Only $69</h2>
         <p>
             <em>
                 You get a lot of bang for your buck, including…
             </em>
         </p> 
-        <section>
+        <section class="grid-cta max-w-60">
             <figure>
                 <img src="./assets/images/illustrations/every-layout-1.svg" alt="Illustration of Every Layout website" />
                 <figcaption>
@@ -298,17 +303,21 @@
     </article>
   </main>
   <footer>
-    <section>
-        <h2>Already purchased Every Layout, but lost your access?</h2>
-        <p>No worries. Add the <span>email address that you used to purchase Every Layout</span> and we’ll re-send your access link.</p>
-        <form>
-            <label for="email1">Your email</label>
-            <input type="email" id="email1" name="email_to_subscribe" />
-            <button type="submit" aria-label="Get access link to Every Layout book">Get my access link</button>
+    <section class="flex gap-s2 region font-mono w-full">
+        <section class="w-full">
+            <h2>Already purchased Every Layout, but lost your access?</h2>
+            <p>No worries. Add the <span>email address that you used to purchase Every Layout</span> and we’ll re-send your access link.</p>
+        </section>
+        <form class="w-full flex flex-col">
+            <label for="email1" class="font-bold">Your email</label>
+            <div class="flex w-full">
+                <input class="max-w-80 w-full font-bold" type="email" id="email1" name="email_to_subscribe" />
+                <button class="w-full max-w-40" aria-label="Get access link to Every Layout book">Get my access link</button>
+            </div>
         </form>
     </section>
     <section>
-        <p>
+        <p class="text-center">
             <span>Every Layout</span> is created by
             <br>
             <a href="https://heydonworks.com">Heydon Pickering</a> & <a href="https://andy-bell.co.uk">Andy Bell</a>

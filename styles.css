@@ -67,6 +67,11 @@ h2 {
 
 p {
     margin-block-start: var(--s1);
+    font-family: var(--font-plain);
+}
+
+header .p {
+    max-width: 60ch;
 }
 
 .gap-s1 {
@@ -81,6 +86,22 @@ p {
     width: 100%;
 }
 
+.max-w-60 {
+    max-width: 60%;
+}
+
+.max-w-40 {
+    max-width: 40%;
+}
+
+.max-w-70 {
+    max-width: 55%;
+}
+
+.max-w-80 {
+    max-width: 80%;
+}
+
 .flex {
     display: flex;
     place-content: center;
@@ -93,6 +114,11 @@ p {
 .flex-col {
     flex-direction: column;
 }
+
+.flex-start {
+    justify-content: flex-start;
+}
+
 
 .grid {
     display: grid;

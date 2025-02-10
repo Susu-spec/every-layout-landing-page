@@ -87,9 +87,9 @@
                 <img src="./assets/images/logos/studio-24.svg" alt="Studio-24 logo" />
             </figure>
         </section>
-        <section>
+        <section class="review-section">
             <h2>Let these happy folks tell you how Every Layout helped them</h2>
-            <div class="flex gap-s2">
+            <div class="flex gap-s2 review-divs block-start w-full flex gap-s2">
               <figure>
                   <img alt="Image of Kevin Powell" />
                   <figcaption>Kevin Powell</figcaption>
@@ -147,7 +147,7 @@
             </p>
             <button class="block-start">Read the free rudiments and axioms</button>
         </section>
-        <section class="grid-illustrations block-start">
+        <section class="grid-illustrations">
             <figure>
                 <img src="./assets/images/illustrations/layout-icon_stack.svg" alt="illustration of the stack layout" />
                 <figcaption>
@@ -290,15 +290,15 @@
                 </figcaption>
             </figure>
         </section>
-        <h3>Checkout securely with <a href="https://www.stripe.com/">Stripe</a></h3>
-        <section>
+        <h2 class="block-start">Checkout securely with <a href="https://www.stripe.com/" class="text-white">Stripe</a></h2>
+        <section class="max-w-60 purchases-section font-mono">
             <h2>JavaScript is required for purchases</h2>
             <p>We use Stripe on Every Layout for payment processing and unfortunately, there’s no sensible way for us to provide you with a non-JavaScript fallback.</p>
-            <p>Please either enable JavaScript or get in touch with <a href="mailto:support@emails.every-layout.dev">support@emails.every-layout.dev</a> and we’ll do our best to help you out.</p>
+            <p>Please either enable JavaScript or get in touch with <a href="mailto:support@emails.every-layout.dev" class="text-white">support@emails.every-layout.dev</a> and we’ll do our best to help you out.</p>
         </section>
-        <aside aria-labelledby="company-purchase-heading">
+        <aside aria-labelledby="company-purchase-heading" class="purchases-section-aside max-w-50 font-mono">
             <h2 id="company-purchase-heading">Are you buying a copy of Every Layout as a company?</h2>
-            <p>We provide bulk discounts for multiple licences, so drop an email to <a href="mailto:support@emails.every-layout.dev">support@emails.every-layout.dev</a> and we’ll sort you a bespoke price.</p>
+            <p>We provide bulk discounts for multiple licences, so drop an email to <a href="mailto:support@emails.every-layout.dev" class="text-white">support@emails.every-layout.dev</a> and we’ll sort you a bespoke price.</p>
         </aside>
     </article>
   </main>
@@ -316,11 +316,12 @@
             </div>
         </form>
     </section>
-    <section>
+    <section class="created-section">
         <p class="text-center">
             <span>Every Layout</span> is created by
             <br>
             <a href="https://heydonworks.com">Heydon Pickering</a> & <a href="https://andy-bell.co.uk">Andy Bell</a>
+            <br>
             <a href="https://every-layout.dev/privacy-policy">Privacy Policy</a> - <a href="https://every-layout.dev/terms-and-conditions">Terms and conditions</a>
         </p>
     </section>

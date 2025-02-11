@@ -234,6 +234,10 @@ header .cta {
     place-content: center;
 }
 
+.created-section {
+    margin-block-end: var(--s3);
+}
+
 
 /* OTHER STYLING - COMPONENTS */
 
@@ -316,9 +320,6 @@ header .cta {
         flex-direction: column;
     }
 
-    /* article {
-        flex-direction: column;
-    } */
     figure {
         max-width: 100% !important;
     }

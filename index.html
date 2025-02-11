@@ -20,7 +20,7 @@
     <meta property="og:url" content="https://every-layout-landing-page.vercel.app/">
 </head>
 <body>
-    <header class="flex flex-row gap-s2 region">
+    <header class="flex flex-row gap-s2 region mobile-flex-col">
         <figure class="w-full max-w-40">
             <img src="./assets/images/cover_3rd.svg" alt="Every Layout 3rd Edition Cover" loading="lazy"/>
         </figure>
@@ -40,7 +40,7 @@
         </section>
     </header>  
   <main>
-    <article class="flex gap-s2 region font-mono w-full">
+    <article class="flex gap-s2 region font-mono w-full mobile-flex-col">
         <section class="w-full">
             <h2>Already purchased Every Layout, but lost your access?</h2>
             <p>No worries. Add the <span>email address that you used to purchase Every Layout</span> and we’ll re-send your access link.</p>
@@ -91,46 +91,58 @@
             <h2>Let these happy folks tell you how Every Layout helped them</h2>
             <div class="flex gap-s2 review-divs block-start w-full flex gap-s2">
               <figure>
-                  <img alt="Image of Kevin Powell" />
-                  <figcaption>Kevin Powell</figcaption>
-                  <blockquote>
+                <div>
+                    <img src="./assets/images/people/kevin-powell.jpg" alt="Image of Kevin Powell" />
+                    <figcaption>Kevin Powell</figcaption>
+                </div>
+                <blockquote>
                     I can’t recommend Every Layout enough. Fantasic for all of the layouts you can use in your projects obviously, but also for how much you’ll learn about flexbox, and CSS in general.
                 </blockquote>
               </figure>
               <figure>
-                  <img alt="Image of Angel Chen" />
-                  <figcaption>Angel Chen</figcaption>
-                  <blockquote>
+                <div>
+                    <img src="./assets/images/people/amie-chen.jpg" alt="Image of Angel Chen" />
+                    <figcaption>Amie Chen</figcaption>
+                </div>
+                <blockquote>
                     CSS is one of the few things I’m comfortable with, but I’m still learning A TON reading Every Layout. Such a great resource!
                 </blockquote>
               </figure>
               <figure>
-                  <img alt="Image of Josh Tumath" />
-                  <figcaption>Josh Tumath</figcaption>
-                  <blockquote>
+                <div>
+                    <img src="./assets/images/people/josh-tumath.jpg" alt="Image of Josh Tumath" />
+                    <figcaption>Josh Tumath</figcaption>
+                </div>
+                <blockquote>
                     Even two years later, Every Layout is still the best resource for learning common, intrinsic layout patterns. It’s revolutionized our design system at the BBC. I’m always sharing it with colleagues who want more experience with CSS.
-                  </blockquote>
+                </blockquote>
               </figure>
               <figure>
-                  <img alt="Image of Mariana Cortés Rueda" />
-                  <figcaption>Mariana Cortés Rueda</figcaption>
-                  <blockquote>
+                <div>
+                    <img src="./assets/images/people/mariana.jpg" alt="Image of Mariana Cortés Rueda" />
+                    <figcaption>Mariana Cortés Rueda</figcaption>
+                </div>
+                <blockquote>
                     This is dev love in form of a resource guide and you’d do well in reviewing it and sharing it. Yes. AGAIN. Thank you Heydon and Andy for this piece of niche art
                 </blockquote>
               </figure>
               <figure>
-                  <img alt="Image of Chris Weekly" />
-                  <figcaption>Chris Weekly</figcaption>
-                  <blockquote>
+                <div>
+                    <img src="./assets/images/people/chris-weekly.jpg" alt="Image of Chris Weekly" />
+                    <figcaption>Chris Weekly</figcaption>
+                </div>
+                <blockquote>
                     Every Layout has fantastic free content, but the full price for all the materials (book, site, components) has had absurdly high ROI for me. I spent less than an hour’s consulting wages, and it’s been transformative - a gift that keeps giving. Highest possible recommendation
                 </blockquote>
               </figure>
               <figure>
-                  <img alt="Image of P J Łaszkowicz" />
-                  <figcaption>P J Łaszkowicz</figcaption>
-                  <blockquote>
+                <div>
+                    <img src="./assets/images/people/pj.jpg" alt="Image of P J Łaszkowicz" />
+                    <figcaption>P J Łaszkowicz</figcaption>
+                </div>
+                <blockquote>
                     Started web development in 1997 and approached the same problems with CSS with updated solutions over the years. Even after all this time references like Every Layout from Andy and Heydon are invaluable materials for re-reading and improving.
-                  </blockquote>
+                </blockquote>
               </figure>
             </div>
         </section>
@@ -229,30 +241,32 @@
         </section>
         <section class="authors-section region">
             <h2>Meet the authors who brought you Every Layout</h2>
-            <div class="authors flex justify-between block-start">
-                <div>
+            <div class="authors mobile-flex-col flex justify-between block-start">
+                <div class="author">
                     <figure>
-                        <img src="" alt="Heydon Pickering"/>
-                        <figcaption>Heydon Pickering</figcaption>
+                        <img src="./assets/images/people/heydon-pickering.jpg" alt="Heydon Pickering"/>
                     </figure>
-                    <h3>Heydon Pickering</h3>
-                    <p>
-                        Heydon is a front-end developer and technical writer specializing in inclusive interface design. They have written and edited a number of books on designing for the web. Every Layout is his second to be republished in Japan.
-                        <br>
-                        Heydon has consulted organizations like Spotify, The BBC, and SpringerNature, helping them to code and document accessible design systems. They also own an online gallery that lets you create and print unique, generative artworks.
-                    </p>
+                    <div class="author-name flex-col">
+                        <h3>Heydon Pickering</h3>
+                        <p>
+                            Heydon is a front-end developer and technical writer specializing in inclusive interface design. They have written and edited a number of books on designing for the web. Every Layout is his second to be republished in Japan.
+                            <br>
+                            Heydon has consulted organizations like Spotify, The BBC, and SpringerNature, helping them to code and document accessible design systems. They also own an online gallery that lets you create and print unique, generative artworks.
+                        </p>
+                    </div>
                 </div>
-                <div>
+                <div class="author">
                     <figure>
-                        <img src="" alt="Andy Bell"/>
-                        <figcaption>Andy Bell</figcaption>
+                        <img src="./assets/images/people/andy-bell.jpg" alt="Andy Bell"/>
                     </figure>
-                    <h3>Andy Bell</h3>
-                    <p>
-                        Andy is a designer and front-end developer who founded Set Studio: an agency who specialise in producing stunning websites that work for everyone.
-                        <br>
-                        Andy has also spent well over a decade specializing in simplifying CSS to make it scale-up for design system projects—in some cases, accessible to millions of people—for some of the largest organizations in the world, such as Google, Harley-Davidson, Vice Media and the NHS. He also wrote the majority of Learn CSS, a CSS course by web.dev.
-                    </p>
+                    <div class="author-name flex-col">
+                        <h3>Andy Bell</h3>
+                        <p>
+                            Andy is a designer and front-end developer who founded Set Studio: an agency who specialise in producing stunning websites that work for everyone.
+                            <br>
+                            Andy has also spent well over a decade specializing in simplifying CSS to make it scale-up for design system projects—in some cases, accessible to millions of people—for some of the largest organizations in the world, such as Google, Harley-Davidson, Vice Media and the NHS. He also wrote the majority of Learn CSS, a CSS course by web.dev.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

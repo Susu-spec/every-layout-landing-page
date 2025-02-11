@@ -245,7 +245,6 @@ header .cta {
 .grid-illustrations {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: var(--s3);
     margin-block-start: var(--s5);
 }
 
@@ -257,13 +256,83 @@ header .cta {
     margin: 0 auto;
 }
 
-.authors { gap: var(--s3); }
+.authors,
+.grid-illustrations { gap: var(--s3); }
 
-.review-divs { overflow-x: scroll; }
+.authors img {
+    width: 12.5rem;
+    height: auto;
+}
+
+.author, .author-name {
+    display: flex;
+}
+
+.author {
+    gap: var(--s0);
+}
+
+.review-divs { 
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    width: 100%;
+    scrollbar-color: var(--color-light) var(--color-dark)
+}
 
 .review-divs figure {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-style: italic;
-    min-width: 600px;
+    min-width: 500px;
     width: 100%;
+    gap: var(--s3);
+    display: flex;
+    flex-direction: row;
+    margin-inline-start: var(--s3);
+    margin-bottom: var(--s3);
+}
+
+.review-divs img, 
+.author img {
+    min-width: 5rem;
+    border: var(--border-thin) solid;
+    filter: saturate(0%) contrast(200%) brightness(140%);
+    transform: scale(101%);
+}
+
+.review-divs figcaption {
+    font-family: var(--font-special);
+    font-size: var(--s0);
+    font-weight: 700;
+    line-height: var(--line-height-small);
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 48rem) {
+    section {
+        max-width: 90% !important;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    /* article {
+        flex-direction: column;
+    } */
+    figure {
+        max-width: 100% !important;
+    }
+
+    .mobile-flex-col {
+        flex-direction: column;
+        gap: var(--s2);
+    }
+
+    .news-logos {
+        flex-direction: row;
+    }
+
+    .purchases-section-aside {
+        max-width: 80%;
+    }
 }

@@ -92,9 +92,6 @@ span {
     font-weight: bold;
 }
 
-header p {
-    max-width: 60ch;
-}
 
 /* FONT FAMILY CLASSES */
 .font-mono { font-family: var(--font-mono) }
@@ -260,6 +257,10 @@ header .cta {
     margin: 0 auto;
 }
 
+.grid-illustrations a {
+    font-weight: bold;
+}
+
 .authors,
 .grid-illustrations { gap: var(--s3); }
 
@@ -314,7 +315,11 @@ header .cta {
 /* MOBILE RESPONSIVENESS */
 
 @media screen and (max-width: 48rem) {
-    section {
+    p {
+        max-width: 100% !important;
+    }
+
+    section, form {
         max-width: 90% !important;
         margin: 0 auto;
         flex-direction: column;
@@ -324,9 +329,43 @@ header .cta {
         max-width: 100% !important;
     }
 
+    form div {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    form button {
+        margin: 0 auto;
+        max-width: 80% !important;
+    }
+
+    input {
+        max-width: 100% !important;
+        padding: .5rem;
+    }
+
     .mobile-flex-col {
         flex-direction: column;
         gap: var(--s2);
+    }
+
+    .author figure, 
+    .author h3, 
+    .author p {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .author h3 {
+        font-size: var(--s2);
+    }
+
+    .grid-cta {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-illustrations {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .news-logos {
@@ -335,5 +374,26 @@ header .cta {
 
     .purchases-section-aside {
         max-width: 80%;
+    }
+}
+
+/* RESPONSIVENESS FOR MEDIUM SCREENS */
+
+
+@media screen and (max-width: 64rem) {
+    .author, 
+    .authors {
+        flex-direction: column;
+    }
+
+    .author-name {
+        gap: var(--s-1);
+    }
+
+    .author figure, 
+    .author h3, 
+    .author p {
+        margin: 0 auto;
+        text-align: center;
     }
 }

@@ -34,6 +34,9 @@
     --color-light: #fafafa;
     --color-mid: grey;
 
+    --color-bg: var(--color-light);
+    --color-text: black;  
+    --color-card-bg: var(--color-lightish); 
 
     /* SPACING & SIZING */
     --ratio: 1.4;
@@ -61,10 +64,17 @@
 
 /* BODY STYLES */
 body {
-    color: black;
+    background-color: var(--color-bg);
+    color: var(--color-text);
     font-family: var(--font-plain);
     cursor: default;
 }
+
+body.dark-mode {
+    --color-bg: var(--color-darkish);
+    --color-text: var(--color-lightish);
+    --color-card-bg: var(--color-darkish);
+  }
 
 
 /* HEADINGS AND TEXT */
@@ -175,6 +185,33 @@ header .cta {
     border-width: var(--border-thin);
 }
 
+/* DARK MODE STYLES */
+
+.cta.dark-mode, button.dark-mode {
+    color: var(--color-text);
+    background-color: var(--color-lightish);
+}
+
+button.dark-mode, 
+.cta-section a.dark-mode {
+    color: var(--color-dark);
+}
+
+footer a.dark-mode {
+    color: var(--color-text);
+}
+
+.grid-illustrations a.dark-mode,
+.cta a.dark-mode {
+    color: var(--color-light);
+}
+
+.theme-toggle {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+}
+
 /* SECTION STYLING */
 
 .region {
@@ -213,7 +250,7 @@ header .cta {
 
 /* OTHER SECTIONS */
 .purchases-section-aside {
-    border-left: var(--s0)  solid white;
+    border-left: var(--s0)  solid var(--color-text);
     padding-left: var(--s0);
     margin: 0 auto;
 }
@@ -229,6 +266,11 @@ header .cta {
     color: var(--color-lightish);
     background-color: var(--color-dark);
     place-content: center;
+}
+
+.cta-section.dark-mode {
+    color: var(--color-dark);
+    background-color: var(--color-lightish);
 }
 
 .created-section {
@@ -282,6 +324,10 @@ header .cta {
     overflow-y: hidden; 
     width: 100%;
     scrollbar-color: var(--color-light) var(--color-dark)
+}
+
+.review-divs.dark-mode {
+    scrollbar-color: var(--color-dark) var(--color-light);
 }
 
 .review-divs figure {

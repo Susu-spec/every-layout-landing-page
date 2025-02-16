@@ -188,6 +188,8 @@ header .cta {
     border-width: var(--border-thin);
 }
 
+/* DARK MODE STYLES */
+
 .cta.dark-mode, button.dark-mode {
     color: var(--color-text);
     background-color: var(--color-lightish);

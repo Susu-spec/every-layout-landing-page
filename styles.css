@@ -71,7 +71,7 @@ body {
 }
 
 body.dark-mode {
-    --color-bg: var(--color-dark);
+    --color-bg: var(--color-darkish);
     --color-text: var(--color-lightish);
     --color-card-bg: var(--color-darkish);
   }
@@ -190,13 +190,24 @@ header .cta {
 
 .cta.dark-mode, button.dark-mode {
     color: var(--color-text);
-    background-color: var(--color-bg);
+    background-color: var(--color-lightish);
 }
 
-.toggle-theme {
-    border: 2px solid var(--color-bg);
-    background-color: var(--color-card-bg);
+button.dark-mode, 
+.cta-section a.dark-mode {
+    color: var(--color-dark);
+}
+
+footer a.dark-mode {
     color: var(--color-text);
+}
+
+.grid-illustrations a.dark-mode,
+.cta a.dark-mode {
+    color: var(--color-light);
+}
+
+.theme-toggle {
     position: fixed;
     bottom: 1rem;
     left: 1rem;
@@ -258,7 +269,7 @@ header .cta {
     place-content: center;
 }
 
-.cta-section .dark-mode {
+.cta-section.dark-mode {
     color: var(--color-dark);
     background-color: var(--color-lightish);
 }
@@ -312,7 +323,7 @@ header .cta {
     scrollbar-color: var(--color-light) var(--color-dark)
 }
 
-.review-divs .dark-mode {
+.review-divs.dark-mode {
     scrollbar-color: var(--color-dark) var(--color-light);
 }
 

@@ -28,13 +28,13 @@
         <section class="w-full max-w-45">
             <div class="flex-start flex-col flex w-full">
                 <h1>Learn to write better, resilient CSS</h1>
-                <p class="max-w-80">
+                <p class="max-w-80 mobile-width-full">
                     If you find yourself wrestling with CSS layout, it’s likely you’re making decisions for browsers they should be making themselves.
                 </p>
-                <p class="max-w-80">
+                <p class="max-w-80 mobile-width-full">
                     Through a series of simple, composable layouts, Every Layout will teach you how to better harness the built-in algorithms that power browsers and CSS.
                 </p>
-                <button class="cta max-w-80"><a href="" >Buy Every Layout for $69</a></button>
+                <button class="cta max-w-80 mobile-button"><a href="" class="">Buy Every Layout for $69</a></button>
                 <a href="https://www.every-layout.dev/rudiments/boxes" class="block-start">Read the free rudiments and axioms</a>
             </div>
         </section>
@@ -47,18 +47,18 @@
         </section>
         <form class="w-full flex flex-col">
             <label for="email1" class="font-bold">Your email</label>
-            <div class="flex w-full">
-                <input class="max-w-80 w-full font-bold" type="email" id="email1" name="email_to_subscribe" />
-                <button class="w-full max-w-40" aria-label="Get access link to Every Layout book">Get my access link</button>
+            <div class="mobile-input flex w-full">
+                <input class="mobile-width-full w-full font-bold" type="email" id="email1" name="email_to_subscribe" />
+                <button class="mobile-width-full w-full max-w-40" aria-label="Get access link to Every Layout book">Get my access link</button>
             </div>
         </form>
     </article>
     <article class="about">
         <h2 class="max-w-80">Every Layout has helped thousands of developers and companies simplify CSS layout in their projects</h2>
-        <p class="max-w-60">
+        <p class="max-w-60 mobile-width-full">
             Employing algorithmic layout design means doing away with <span>@media</span> breakpoints, “magic numbers”, and other hacks, to create context-independent layout components
         </p>
-        <p class="max-w-60">
+        <p class="max-w-60 mobile-width-full">
             Your future design systems will be more consistent, terser in code, and more malleable in the hands of your users and their devices. Every Layout is now in its 3rd edition and has helped some of the largest companies in the world achieve exactly this.
         </p>
         <section class="news-logos flex justify-between w-full">
@@ -239,10 +239,10 @@
                 </figcaption>
             </figure>
         </section>
-        <section class="authors-section region">
+        <section class="authors-section mobile-region region">
             <h2>Meet the authors who brought you Every Layout</h2>
             <div class="authors mobile-flex-col flex justify-between block-start">
-                <div class="author">
+                <div class="author mobile-flex-col">
                     <figure>
                         <img src="./assets/images/people/heydon-pickering.jpg" alt="Heydon Pickering"/>
                     </figure>
@@ -255,7 +255,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="author">
+                <div class="author mobile-flex-col">
                     <figure>
                         <img src="./assets/images/people/andy-bell.jpg" alt="Andy Bell"/>
                     </figure>
@@ -279,54 +279,54 @@
             </em>
         </p> 
         <section class="grid-cta max-w-60">
-            <figure>
-                <img src="./assets/images/illustrations/every-layout-1.svg" alt="Illustration of Every Layout website" />
+            <figure class="flex flex-col gap-s2">
+                <img class="image-theme" src="./assets/images/illustrations/every-layout-1.svg" alt="Illustration of Every Layout website" />
                 <figcaption>
                     Access to all the site content, including all the layouts and layout generators. All available offline too!
                 </figcaption>
             </figure>
-            <figure>
-                <img src="./assets/images/illustrations/every-layout-2.svg" alt="Illustration of Every Layout book" />
+            <figure class="flex flex-col gap-s2">
+                <img class="image-theme" src="./assets/images/illustrations/every-layout-2.svg" alt="Illustration of Every Layout book" />
                 <figcaption>
                     Every Layout as a book, in the EPUB format, for reading with your preferred reader.
                 </figcaption>
             </figure>
-            <figure>
-                <img src="./assets/images/illustrations/every-layout-3.svg" alt="Illustration of wrenches to denote tooling" />
+            <figure class="flex flex-col gap-s2">
+                <img class="image-theme" src="./assets/images/illustrations/every-layout-3.svg" alt="Illustration of wrenches to denote tooling" />
                 <figcaption>
                     The full set of layout components, implemented as interoperable custom elements.
                 </figcaption>
             </figure>
-            <figure>
-                <img src="./assets/images/illustrations/every-layout-4.svg" alt="Illustration with More More More text" />
+            <figure class="flex flex-col gap-s2">
+                <img class="image-theme" src="./assets/images/illustrations/every-layout-4.svg" alt="Illustration with More More More text" />
                 <figcaption>
                     Free updates for life. We are always improving, and have lots more content planned
                 </figcaption>
             </figure>
         </section>
-        <h2 class="block-start">Checkout securely with <a href="https://www.stripe.com/" class="text-white">Stripe</a></h2>
-        <section class="max-w-60 text-center font-mono">
+        <h2 class="mobile-block-start block-start">Checkout securely with <a href="https://www.stripe.com/" class="text-white">Stripe</a></h2>
+        <section class="max-w-60 mobile-text-left text-center font-mono">
             <h2>JavaScript is required for purchases</h2>
             <p>We use Stripe on Every Layout for payment processing and unfortunately, there’s no sensible way for us to provide you with a non-JavaScript fallback.</p>
             <p>Please either enable JavaScript or get in touch with <a href="mailto:support@emails.every-layout.dev" class="text-white">support@emails.every-layout.dev</a> and we’ll do our best to help you out.</p>
         </section>
-        <aside aria-labelledby="company-purchase-heading" class="purchases-section-aside max-w-50 font-mono">
+        <aside aria-labelledby="company-purchase-heading" class="purchases-section-aside mobile-text-left max-w-50 font-mono">
             <h2 id="company-purchase-heading">Are you buying a copy of Every Layout as a company?</h2>
             <p>We provide bulk discounts for multiple licences, so drop an email to <a href="mailto:support@emails.every-layout.dev" class="text-white">support@emails.every-layout.dev</a> and we’ll sort you a bespoke price.</p>
         </aside>
     </article>
   </main>
   <footer>
-    <section class="flex gap-s2 region font-mono w-full">
+    <section class="flex gap-s2 mobile-region region font-mono w-full">
         <section class="w-full">
             <h2>Already purchased Every Layout, but lost your access?</h2>
             <p>No worries. Add the <span>email address that you used to purchase Every Layout</span> and we’ll re-send your access link.</p>
         </section>
         <form class="w-full flex flex-col">
             <label for="email1" class="font-bold">Your email</label>
-            <div class="flex w-full">
-                <input class="max-w-80 w-full font-bold" type="email" id="email1" name="email_to_subscribe" />
-                <button class="w-full max-w-40" aria-label="Get access link to Every Layout book">Get my access link</button>
+            <div class="mobile-input flex w-full">
+                <input class="mobile-width-full max-w-80 w-full font-bold" type="email" id="email1" name="email_to_subscribe" />
+                <button class="mobile-width-full w-full max-w-40" aria-label="Get access link to Every Layout book">Get my access link</button>
             </div>
         </form>
     </section>

@@ -17,5 +17,8 @@ document.getElementById('theme-toggle').addEventListener('click', function() {
   
     const reviewDivs = document.querySelector('.review-divs');
     if (reviewDivs) reviewDivs.classList.toggle('dark-mode');
+
+    const images = document.querySelector(".image-theme");
+    if(images) images.classList.toggle('dark-mode')
   });
   

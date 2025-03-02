@@ -128,7 +128,7 @@ img {
 
 /* FORM ELEMENTS */
 
-input { border: 8px solid black; }
+input { border: 8px solid black; height: 3rem;}
 
 .text-white { color: white; }
 
@@ -136,6 +136,8 @@ input { border: 8px solid black; }
     text-align: center;
     margin: 0 auto;
 }
+
+
 
 
 
@@ -195,6 +197,10 @@ header .cta {
     background-color: var(--color-lightish);
 }
 
+.image-theme.dark-mode {
+    background: var(--color-dark);
+}
+
 button.dark-mode, 
 .cta-section a.dark-mode {
     color: var(--color-dark);
@@ -211,8 +217,8 @@ footer a.dark-mode {
 
 .theme-toggle {
     position: fixed;
-    bottom: 1rem;
-    left: 1rem;
+    top: 1rem;
+    right: 1rem;
 }
 
 /* SECTION STYLING */
@@ -255,7 +261,7 @@ footer a.dark-mode {
 .purchases-section-aside {
     border-left: var(--s0)  solid var(--color-text);
     padding-left: var(--s0);
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .authors-section,
@@ -316,7 +322,10 @@ footer a.dark-mode {
 
 .author {
     gap: var(--s0);
+    width: 100%;
+    min-width: 5rem;
 }
+
 
 .review-divs { 
     overflow-x: auto; 
@@ -356,11 +365,15 @@ footer a.dark-mode {
     line-height: var(--line-height-small);
 }
 
+.image-theme {
+    background: black;
+}
+
 
 /* MOBILE RESPONSIVENESS */
 
 @media screen and (max-width: 48rem) {
-    section {
+    section, form {
         max-width: 90% !important;
         margin: 0 auto;
         flex-direction: column;
@@ -370,16 +383,60 @@ footer a.dark-mode {
         max-width: 100% !important;
     }
 
+    
+    .grid-cta {  
+        margin-block-start: var(--s1);  
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .mobile-block-start { 
+        margin-block-start: var(--s1); 
+        margin-block-end: var(--s1);   
+        line-height: 0.8;
+
+    }
+
+    .mobile-button {
+        padding: .5rem .8rem .7rem;
+    }
+
+    .mobile-text-left {
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .mobile-width-full { 
+        max-width: 100%;
+    }
+
+    .grid-illustrations {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mobile-input {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
     .mobile-flex-col {
         flex-direction: column;
         gap: var(--s2);
     }
 
+    .mobile-region { 
+        padding-inline: 0;
+    }
+
     .news-logos {
         flex-direction: row;
+        gap: var(--s4);
     }
 
     .purchases-section-aside {
-        max-width: 80%;
+        max-width: 100%;
+        margin-top: 2rem;
+        padding-left: 0;
     }
 }

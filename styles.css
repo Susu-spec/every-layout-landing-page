@@ -102,9 +102,6 @@ span {
     font-weight: bold;
 }
 
-header p {
-    max-width: 60ch;
-}
 
 /* FONT FAMILY CLASSES */
 .font-mono { font-family: var(--font-mono) }
@@ -308,6 +305,10 @@ footer a.dark-mode {
     margin: 0 auto;
 }
 
+.grid-illustrations a {
+    font-weight: bold;
+}
+
 .authors,
 .grid-illustrations { gap: var(--s3); }
 
@@ -438,5 +439,26 @@ footer a.dark-mode {
         max-width: 100%;
         margin-top: 2rem;
         padding-left: 0;
+    }
+}
+
+/* RESPONSIVENESS FOR MEDIUM SCREENS */
+
+
+@media screen and (max-width: 64rem) {
+    .author, 
+    .authors {
+        flex-direction: column;
+    }
+
+    .author-name {
+        gap: var(--s-1);
+    }
+
+    .author figure, 
+    .author h3, 
+    .author p {
+        margin: 0 auto;
+        text-align: center;
     }
 }
